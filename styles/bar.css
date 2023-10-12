@@ -1,0 +1,55 @@
+.zbody{
+  margin: 0;
+}
+.zbar_top{
+  height: 10vh;
+  width: 100%;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-bottom: 10px;
+  column-gap: 2vw;
+}
+.zbar_top_text{
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+  justify-content: space-evenly;
+  color: white;
+  font-size: 1vw;
+  padding: 0 3vw;
+}
+
+.zbar_top_button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.zcontactus{
+  border: none;
+  border-radius:.25vw ;
+  width: 10vw;
+  height: 4.5vh;
+  background-color: #0017E5;
+  color: white;
+  font-size: 1.25vw;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+
+
+@media (max-width:1000px){
+  .zbar_top{
+    grid-template-columns: 3fr 1fr;
+  }
+  .zbar_top_text{
+    font-size: 1.8vw;
+  }
+  .zcontactus{
+    width: 15vw;
+    height: 3vh;
+    font-size: 2vw;
+  }
+}
