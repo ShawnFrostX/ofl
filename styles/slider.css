@@ -1,0 +1,379 @@
+.zslider_sec{
+  position: relative;
+}
+
+
+
+.zslider_sec .slide-button{
+  z-index: 5;
+  position: absolute;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  color:#fff;
+  background: #000;
+  border: none;
+  outline: none;
+  font-size: 2.2rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  /* overflow: auto; */
+}
+
+.zslider_sec .slide-button:hover{
+  background: #444;
+}
+
+.zslider_sec .slide-button#prev-slide{
+  left: -.54vw;
+  display: none;
+}
+
+.zslider_sec .slide-button#next-slide{
+  right: 0;
+  
+}
+
+
+.zslider{
+  display: flex;
+  max-height: 90vh;
+  /* border: 3px blue solid ; */
+  overflow-y: hidden;
+  scrollbar-width: none;
+  margin-bottom: 2vh;
+  /* padding-left: 1vw; */
+  
+}
+
+.zslider::-webkit-scrollbar{
+  display: none;
+}
+
+.zaero{
+  width: 35vw;
+  height: 45vh;
+  object-fit: cover;
+}
+
+.zsea_box,.ztruck_box{
+  display: grid;
+  grid-template-columns: 25vw 25vw;
+}
+
+.ztruck{
+  /* position: absolute; */
+  width: 25vw;
+  height: 45vh;
+  object-fit: cover;
+}
+
+.zsea{
+  /* position: absolute; */
+  width: 25vw;
+  height: 40vh;
+  object-fit: cover;
+}
+
+.zevent{
+  width: 30vw;
+  height: 45vh;
+  object-fit: cover;
+}
+
+.zcustoms{
+  width: 30vw;
+  height: 45vh;
+  object-fit: cover;
+  transform: scaleX(-1);
+}
+
+.zwarehousing{
+  width: 30vw;
+  height: 45vh;
+  object-fit: cover;
+}
+
+.zbox{
+  margin: 0 10px;
+  height: 90vh;
+  /* border: 1px blue solid;   */
+}
+.zbox0{
+  height: 90vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background-color: black;
+  
+}
+
+.zbox1{
+  height: 90vh;
+  /* width: 60vw; */
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 5vh;
+  background-color: black;
+
+}
+
+.zbox2{
+  height: 90vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.zbox3{
+  height: 90vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  /* flex-direction: column;
+  justify-content: space-between; */
+  /* row-gap: 2vh; */
+}
+.zbox4{
+  height: 90vh;
+  display: grid;
+  /* flex-direction: column;
+  justify-content: space-between; */
+  grid-template-rows: 1fr 1fr;
+  /* row-gap: 2vh; */
+}
+
+
+.zbox5{
+  height: 90vh;
+  
+}
+.zdet1,.zdet2{
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* grid-template-rows: 1fr 1fr; */
+
+}
+
+
+.zdet3{
+  width:35vw;
+  height: 90vh;
+  /*display: grid;
+  grid-template-rows: 10vh 1fr 1fr 1fr;
+  row-gap: .25vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+}
+
+
+.zbox2,.zbox3,.zbox4{
+  /* border: 2px red solid; */
+  color: black;
+}
+
+.zbox0,.zbox1,.zbox5{
+  /* border: 2px red solid; */
+  background-color: black;
+  color: white;
+}
+
+.zclearance,.zinsurance{
+  display: flex;
+}
+.zshipment,.zdistribution{
+  display: flex;
+}
+
+
+
+.ztext_box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  /* border: cyan 1px solid; */
+}
+.zshead{
+  font-family: sans-serif;
+  font-weight: 800px;
+  font-size: 3vw;
+  padding: 1vw;
+}
+.zhead{
+  font-family: sans-serif;
+  font-weight: 800px;
+  font-size: 1.75vw;
+  padding: 1vh 0 1vh 1vw;
+}
+.ztext{
+  
+  font-family: sans-serif;
+  font-size: .85vw;
+  padding: 1vh 1vw 1vh 1vw;
+  line-break: anywhere;
+
+}
+
+
+
+/* slider bar */
+.zslider_sec .zslider_bar{
+  height: 24px;
+  width: 99%;
+  /* background: red; */
+  display: flex;
+  align-items: center;
+
+}
+
+.zslider_bar .zscroll_track{
+  margin-left: 10px;
+  height: .25vw;
+  width: 99%;
+  background: #ccc; 
+  position: relative;
+  border-radius: 5vw;
+}
+
+.zslider_bar:hover .zscroll_track{
+  height: .30vw ;
+}
+
+
+
+.zslider_bar .zscroll_thumb{
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  background: #000;
+  border-radius: inherit;
+}
+
+.zslider_bar .zscroll_thumb:active{
+  height: .60vw;
+  top: -.15vw;
+}
+
+.zslider_bar .zscroll_thumb::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10px;
+  bottom: -10px;
+}
+
+
+@media (max-width:1000px){
+  .zslider_sec{
+    display: none;
+  }
+
+  .zcontainer{
+    display: grid;
+    grid-template-rows: repeat(6,80vh);
+    gap: 10vh;
+  }
+
+  .zbox{
+    height: 88vh;
+    position: relative;
+    /* border: red solid 1px; */
+    margin: 0;
+  }
+
+  .zaero{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+  }
+
+
+  .ztruck_box,.zsea_box{
+    grid-template-columns: 1fr 1fr;
+  }
+  .ztruck{
+    position: absolute;
+    height:50%;
+    width: 50%;
+  }
+
+
+  .zsea{
+    position: absolute;
+    height:50%;
+    width: 50%;
+    right: 0;
+  }
+
+  .zbox1{
+    gap: 0;
+  }
+
+  .zevent{
+    position: absolute;
+
+    height: 50%;
+    width: 100%;
+  }
+
+  .zbox3{
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .zcustoms{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+  }
+
+  .zwarehousing{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 50%;
+  }
+
+  .zdet3{
+    width: 100%;
+    row-gap: .25vh;
+    display: grid;
+    grid-template-rows: 10vh 1fr 1fr 1fr;
+    row-gap: .25vh;
+    /* padding: 0vh 2vw ; */
+  }
+
+  .ztext_box{
+    justify-content: center;
+  }
+
+  .zshead{
+    font-family: sans-serif;
+    font-weight: 3vh;
+    font-size: 4vh;
+    padding: 1vw;
+  }
+  .zhead{
+    font-family: sans-serif;
+    font-weight: 3vh;
+    font-size: 3vh;
+    padding: 1vh 0 1vh 2vw;
+  }
+  .ztext{
+    font-family: sans-serif;
+    font-size: 1.5vh;
+    padding: 1vh 2vw 1vh 2vw;
+  }
+
+
+}
+
+  
+@media (min-width:1001px){
+  .zmob_scroll{
+    display: none;
+  }
+}
