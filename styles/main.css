@@ -30,7 +30,10 @@ gap:10vh;
 }
 
 .vid_cont{
-  background-color: black;
+  background-image:url('../other/bg_img.jpg') ;
+  background-size: 113vw 125vh;
+  background-repeat: no-repeat;
+  object-fit: cover;
   height: 125vh;
 }
 
@@ -45,7 +48,7 @@ gap:10vh;
   
 }
 .r_vid{
-
+/* display: none; */
 min-width: 100%; 
 min-height: 100%;
 object-fit: contain;
@@ -330,9 +333,16 @@ svg .blue_bar {
       
 
   }
+
+  .vid_cont{
+    background-size: auto 80vh;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height: 80vh;
+  }
+
   .r_vid {
       /* transform: translateY(-800px); */
-    
       position: absolute; 
       right: 0; 
       bottom: 0;
@@ -341,7 +351,7 @@ svg .blue_bar {
       min-height: 100%;
       width: auto;
       height: 30vh ;
-      z-index: -100;
+      /* z-index: -100; */
       background-size: cover;
       overflow: hidden;
       
