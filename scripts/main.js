@@ -4,17 +4,35 @@ const cross = document.querySelector(".cross")
 const res_nav = document.querySelector(".res_nav")
 const home_nav2 = document.querySelector(".home_nav2")
 const solns_btn = document.querySelector(".solns_btn")
+
+
+function scrollFunction(id) {
+    let e = document.getElementById(id);
+    console.log(e)
+    // This ends the block to the window 
+    // bottom and also aligns the view to the center 
+    e.scrollIntoView({
+      block: 'start',
+      behavior: 'smooth',
+      inline: 'center'
+    });
+  }
+  
+  
+
+
 function plus_btn() {
     arr = ["Air Frieght","Sea Frieght","Road Frieght","Event Logistics","Insurance Service","Oversizeshipment & Project","Customs Clearance","Warehousing & Distribution","Special equipment","Food Storage"]
 
-    arrid = ['home','aboutusmain','qmap','zbox0','zbox1','zbox2','zbox3','zbox4','zbox5','bluebox']
+    arrid = ['zmbox0','zmbox1','zmbox1','zmbox2','zmbox3','zmbox4','zmbox3','zmbox4','zmbox5','zmbox5']
     
 // cursor pointer aakkanam --salah:)
 
-    arr.forEach((s)=> {
+    arr.forEach((s,index)=> {
         const li = document.createElement("li")
         li.innerHTML = s
-        li.id = 'new'
+        const id = arrid[index] 
+        li.addEventListener('click',() => {scrollFunction(id)} )
         li.classList.add("new")
         solns_btn.parentNode.insertBefore(li, solns_btn.nextSibling);
 
