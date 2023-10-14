@@ -92,20 +92,20 @@ function show_nav() {
    const w_nav = document.querySelector(".w_nav")
    
    w_nav.style.display = "block"
-   let u = document.querySelectorAll(".u")
-   u = [...u]
-   u.forEach((el)=>{
-    el.addEventListener("mouseover",()=>{
-        el.style.borderBottom = "solid #000"
-    })
-   }
-   )
-   u.forEach((el)=>{
-    el.addEventListener("mouseleave",()=>{
-        el.style.borderBottom = "solid #FFF"
-    })
-   }
-   )
+//    let u = document.querySelectorAll(".u")
+//    u = [...u]
+//    u.forEach((el)=>{
+//     el.addEventListener("mouseover",()=>{
+//         el.style.borderBottom = "solid #000"
+//     })
+//    }
+//    )
+//    u.forEach((el)=>{
+//     el.addEventListener("mouseleave",()=>{
+//         el.style.borderBottom = "solid #FFF"
+//     })
+//    }
+//    )
 
    
 
