@@ -29,6 +29,11 @@ gap:10vh;
 
 }
 
+.vid_cont{
+  background-color: black;
+  height: 125vh;
+}
+
 #bg_vid {
   margin-top: -100px;
   width: 100vw;
