@@ -103,6 +103,8 @@
 }
 
 .contactbut{
+    color: black;
+    cursor: pointer;
     display: flex;
     background-color: white;
     width: 50vw;
@@ -112,10 +114,15 @@
     align-items: center;
 }
 
-.buttext{
-    color:black;
+.buttext,.sopy{
+    /* color:black; */
     font-weight: bold;
+    text-decoration: none;
+    border: none;
+    background-color: #FFF;
+    font-size: 2vh;
 }
+
 
 .bluebox{
     display:flex;
@@ -125,7 +132,7 @@
     padding: 8vh 5vw;
     gap: 12.5vh;
     scroll-snap-align: start;
-    
+    position:relative;
 }
 
 .bluerows{
@@ -163,6 +170,11 @@
     outline: none;
     border-bottom: 1px solid white;
 }
+#btner {
+    margin-top:10vh;
+    
+}
+
 
 @media only screen and (min-width:700px){
     .b1head{
@@ -216,5 +228,36 @@
     .contactbut{
         margin-left: auto;
         width: 15vw;
+        border: none;
     }
+
+    .sopy:hover{
+        background-color: black;
+        color:white ;
+    }
+
+    .copy:hover{
+        background-color: #0017E5;
+        color:#FFF;
+    }
+
+    .buttext {
+        text-decoration: none;
+        border: none;
+        background-color: transparent;
+        font-size: 2vh;
+    }
+    
+   #btner {
+        /* margin-top:10vh; */
+        position: absolute;
+        bottom: 8vh;
+        right:5vw;
+    } 
+   
+  
+
+    
+    
 }
+

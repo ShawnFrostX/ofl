@@ -6,6 +6,7 @@ const home_nav2 = document.querySelector(".home_nav2")
 const solns_btn = document.querySelector(".solns_btn")
 
 
+
 function scrollFunction(id) {
     let e = document.getElementById(id);
     console.log(e)
@@ -26,13 +27,14 @@ function plus_btn() {
 
     arrid = ['zmbox0','zmbox1','zmbox1','zmbox2','zmbox3','zmbox4','zmbox3','zmbox4','zmbox5','zmbox5']
     
-// cursor pointer aakkanam --salah:)
 
     arr.forEach((s,index)=> {
         const li = document.createElement("li")
         li.innerHTML = s
         const id = arrid[index] 
+
         li.addEventListener('click',() => {scrollFunction(id)} )
+       
         li.classList.add("new")
         solns_btn.parentNode.insertBefore(li, solns_btn.nextSibling);
 
@@ -86,11 +88,51 @@ function exit_nav() {
 function show_nav() {
    let in_div = document.querySelector(".in_div")
    in_div.style.width ="50vw" 
-   const w_nav = document.querySelector(".w_nav")
-   console.log("m")
-   w_nav.style.display = "block"
    
+   const w_nav = document.querySelector(".w_nav")
+   
+   w_nav.style.display = "block"
+   let u = document.querySelectorAll(".u")
+   u = [...u]
+   u.forEach((el)=>{
+    el.addEventListener("mouseover",()=>{
+        el.style.borderBottom = "solid #000"
+    })
+   }
+   )
+   u.forEach((el)=>{
+    el.addEventListener("mouseleave",()=>{
+        el.style.borderBottom = "solid #FFF"
+    })
+   }
+   )
+
    
 
   
 }
+async function copyContent() {
+    try {
+      await navigator.clipboard.writeText(`
+      Office No : 12Old Mohaddharath
+      BuildingFathima Al Zahra StreetExit
+      15 Cross Section
+      Po box : 27123, code :11417 Riyadh
+      Kingdom Of Saudi Arabia
+      phone : 011-4793473 , 011-4793517
+      Fax : 011-4785021Mob : 00966-564994448Riyadh,
+      Kingdom of Saudi Arabia
+      Email : business@oflsa.com
+`);
+      console.log('Content copied to clipboard');
+      /* Resolved - text copied to clipboard successfully */
+    } catch (err) {
+      console.error('Failed to copy: ', err);
+      /* Rejected - text failed to copy to the clipboard */
+    }
+}
+let copy = document.querySelector(".copy")
+copy.addEventListener("click", (el)=>{
+  copyContent()
+} ) 
+
