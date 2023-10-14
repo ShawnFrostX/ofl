@@ -343,6 +343,7 @@ svg .blue_bar {
 
   .r_vid {
       /* transform: translateY(-800px); */
+      
       position: absolute; 
       right: 0; 
       bottom: 0;

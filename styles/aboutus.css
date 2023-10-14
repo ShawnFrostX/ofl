@@ -40,6 +40,9 @@
     word-wrap: break-word;
     font-size: 4vh;
 }
+.abic{
+    cursor: pointer;
+}
 
 @media only screen and (min-width:800px){
     .aboutusmain{
