@@ -22,6 +22,7 @@ body{
     justify-content: center;
     /* position: relative; */
     /* height: 80vh; */
+    margin-bottom:5vh ;
 }
 .qimg{
     
@@ -32,13 +33,12 @@ body{
 }
 
 .qfooter{
-    height: 35vh;
-    display: grid;
-    grid-template-rows:1fr 2fr 20% ;
-    /* row-gap: 20px; */
+    background-color: #0017e5;
+    color: white;
+    display: flex;
     max-height: 70%;
     margin-top: 5vh;
-    /* font-size: 2vh; */
+    flex-direction: column;
 }
 
 .qheader{
@@ -82,10 +82,7 @@ body{
     justify-content: space-evenly;
 }
 
-.qfooter{
-    background-color: #0017e5;
-    color: white;
-}
+
 
 @media (max-width:850px) {
     .qlogo{
@@ -93,7 +90,6 @@ body{
         height: 7vw;
     }   
     .qfooter{
-        height:20vh;
         font-size: 2.25vw;
     }
     .qlogof,.qlogot{

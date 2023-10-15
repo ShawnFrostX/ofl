@@ -14,7 +14,7 @@ width: 100vw;
 .home_main {
 display: flex;
 flex-direction: column;
-margin-top: 5vh;
+margin-top: 10vh;
 gap:10vh;
 }
 .home {
@@ -77,7 +77,7 @@ width: auto;
 
 }
 .nav_c {
-  background-color: #0017E5;
+  background-color: transparent;
   /* border: white 2px solid; */
   /* left: 0; */
   z-index:100;
@@ -89,6 +89,7 @@ width: auto;
   justify-content: center;
   position: fixed;
   top: 05px;
+  transition: all .3s ease-in;
 }
 .navbar {
   width: 90vw;
@@ -97,8 +98,7 @@ width: auto;
   justify-content: space-around;
   gap: 10vw;
   align-items: center;
-  /* position: fixed;
-  top: 30px; */
+  margin: 0 5vw;
 }
 ul {
   list-style-type: none;
@@ -413,7 +413,6 @@ ul {
       display: flex;
       flex-direction: column;
       gap:5px;
-      margin-top: 10px;
       padding-right: 5vw;
   }
   .bar {
@@ -460,7 +459,8 @@ ul {
          
       } 
       .res_nav {
-          position: absolute;
+        z-index: 100;
+          position: fixed;
           /* display: block; */
           top:24px;
           right:0;
@@ -723,16 +723,14 @@ font-size: 22px;
 #butc1:hover{
   filter: saturate(50%);
 
-transition: all .1s ease-in;
+  transition: all .1s ease-in;
 
 }
 #butc2{
-  color:#0017E5;
-  background-color: white;
+  color:#fff;
+  background-color: #0017E5;
 }
 #butc2:hover{
-  /* background-color: #0017E5; */
-  /* color: white; */
   opacity: .75;
   transition: all .1s ease-in;
 }

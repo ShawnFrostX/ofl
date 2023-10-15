@@ -136,3 +136,56 @@ copy.addEventListener("click", (el)=>{
   copyContent()
 } ) 
 
+
+const output = document.querySelector("#output");
+
+
+window.addEventListener("scroll", (event) => {
+   if(scrollY == 0) {
+     // console.log(`scrollTop`)
+       rendernew()
+    }   else {
+    renderold()
+  }
+  
+  });
+
+
+function rendernew() {
+  const nav_c = document.querySelector(".nav_c")
+  nav_c.style.backgroundColor = "transparent"
+}
+function renderold (){
+  const nav_c = document.querySelector(".nav_c")
+  nav_c.style.backgroundColor = "#0017E5"
+
+}
+
+var lastScrollTop = 0;
+
+// element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
+window.addEventListener("scroll", function(){ // or window.addEventListener("scroll"....
+   var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+   if (scrollY==0){
+    const butc2 = this.document.getElementById('butc2')
+    butc2.style.color = '#fff'
+    butc2.style.backgroundColor = '#0017E5'
+    butc2.style.transition = 'all .1s ease-in'
+   }
+   else if (st > lastScrollTop) {
+    const nav_c = document.querySelector(".nav_c")
+    nav_c.style.display="none"
+    // nav_c.style.transition = 'all 1s ease-in'
+      // downscroll code
+
+
+   } else if (st < lastScrollTop) {
+    const nav_c = document.querySelector(".nav_c")
+    nav_c.style.display="flex"
+    const butc2 = this.document.getElementById('butc2')
+    butc2.style.color = '#0017E5'
+    butc2.style.backgroundColor = '#fff'
+      // upscroll code
+   } // else was horizontal scroll
+   lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+}, false);
