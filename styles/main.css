@@ -231,7 +231,7 @@ ul {
 }
 
 .ad_who_txt{
-  font-size: 2vh;
+  font-size: 1.3vw;
 }
 
 .ad_blue_head{
@@ -307,6 +307,9 @@ ul {
       padding-left: 3vw;
       padding-bottom: 9vh;
   }
+  .ad_blue_off,.ad_blue_ph{
+    font-size: 1.2vw;
+  }
 
   .ad_who{
       order:1;
@@ -348,8 +351,11 @@ ul {
   .blue_bar {
     display: block;
   }
+  .ad_who_txt{
+    font-size: 2vh;
+  }
   .home {
-    height: 80vh;
+    height: 90vh;
     overflow: hidden;
   }
   .home_main {
@@ -710,7 +716,7 @@ cursor: pointer;
 
 color: #FFF;
 font-family: Sarabun;
-font-size: 22px;
+font-size: 1.5vw;
 
 
 
@@ -741,7 +747,6 @@ font-size: 22px;
 }
 
 .home_nav .m:hover {
-  color:#000;
   /* background-color:rgba(255,255,255,0.25); */
   background-color: #000;
   border-radius: 20px;

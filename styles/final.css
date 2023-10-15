@@ -190,13 +190,14 @@
         justify-content: space-around;
         align-items: flex-start;
         gap: 8vw;
-        padding-left: 1vw;
-        padding-right: 1vw;
+        padding-left: 2vw;
+        padding-right: 5vw;
     }
 
     .b1foot{
         flex-direction: row;
         justify-content: space-around;
+        padding: 0;
     }
 
     .b1footbits{

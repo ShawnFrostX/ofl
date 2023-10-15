@@ -10,7 +10,7 @@ body{
 
 
 .qtitle{
-    margin: 2vh 2vw;
+    margin: 3vh 5vw;
     font-size: 30px;
     font-weight: 700;
 }
@@ -22,7 +22,7 @@ body{
     justify-content: center;
     /* position: relative; */
     /* height: 80vh; */
-    margin-bottom:5vh ;
+    margin-bottom:2vh ;
 }
 .qimg{
     
@@ -37,7 +37,7 @@ body{
     color: white;
     display: flex;
     max-height: 70%;
-    margin-top: 5vh;
+    margin-top: 3vh;
     flex-direction: column;
 }
 
@@ -71,6 +71,7 @@ body{
     text-align: center;
     border-top: .5px solid white;
     align-items: center;
+    padding: .8vw;
 
 }
 .qlogo{
@@ -90,7 +91,7 @@ body{
         height: 7vw;
     }   
     .qfooter{
-        font-size: 2.25vw;
+        font-size: 1.5vw;
     }
     .qlogof,.qlogot{
         height: 5vw;
@@ -102,6 +103,6 @@ body{
     .qborder1{
         height: 50vh;
         justify-content: center;
-        gap: 5vh;
+        gap: 2vh;
     }
 }
