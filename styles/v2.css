@@ -93,6 +93,7 @@ body{
         height: 7vw;
     }   
     .qfooter{
+        height:20vh;
         font-size: 2.25vw;
     }
     .qlogof,.qlogot{
