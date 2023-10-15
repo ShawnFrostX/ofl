@@ -4,6 +4,7 @@ body {
   
 
 }
+
 .html {
 width: 100vw;
 }
@@ -13,6 +14,7 @@ width: 100vw;
 .home_main {
 display: flex;
 flex-direction: column;
+margin-top: 5vh;
 gap:10vh;
 }
 .home {
@@ -22,9 +24,10 @@ gap:10vh;
   position: relative;
 }
 .top_bar {
-  position: absolute;
+  z-index: 100;
+  position: fixed;
   height: 24px;
-  background: #0017E5;
+  /* background: #0017E5; */
   width:100vw;
 
 }
@@ -60,10 +63,10 @@ height: 125vh;
 width: auto;
 }
 .home_main {
-  margin-top: -500px;
+  /* margin-top: -500px; */
   position: absolute;
   top: 50px;
-  margin-top: 0px;
+  /* margin-top: 0px; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -73,11 +76,27 @@ width: auto;
   justify-content: center;
 
 }
+.nav_c {
+  background-color: #0017E5;
+  /* border: white 2px solid; */
+  /* left: 0; */
+  z-index:100;
+  height: 10vh;
+  width: 90vw;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 05px;
+}
 .navbar {
+  width: 90vw;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   gap: 10vw;
+  align-items: center;
   /* position: fixed;
   top: 30px; */
 }
@@ -105,7 +124,7 @@ ul {
   align-items: center;
   gap: 48px;
   border-radius: 4px;
-  background: #0017E5;
+  background: black;
   color: #FFF;
   font-family: Inter;
   font-size: 14px;
@@ -602,7 +621,9 @@ display: none;
 width: 80vw;
 height: 50vh;
 background-color:#FFF;
-position: absolute;
+position: fixed;
+z-index:100;
+border: 1px black solid;
 top:25vh;
 margin-left: 10vw;
 
@@ -616,12 +637,12 @@ align-items: center;
 height: 50vh;
 }
 .in_div {
-
-position: absolute;
+z-index: 101;
+position: fixed;
 width:0 ;
 background-color: #1d0e0e;
-height: 20vh;
-top:10vh;
+height: 21vh;
+top:6.5vh;
 margin-left: 25vw;
 opacity: 0;
 }
@@ -692,10 +713,23 @@ font-family: Sarabun;
 font-size: 22px;
 
 
+
 }
-.cont_btn:hover {
+
+#butc1{
+  background-color: #0017E5;
+}
+
+#butc1:hover{
+opacity: .95;
+transition: all .1s ease-in;
+
+}
+
+#butc2:hover{
   /* background-color: #E7E7E7; */
-  filter: saturate(50%);
+  /* filter: saturate(50%); */
+  opacity: .75;
   transition: all .1s ease-in;
 }
 
@@ -706,7 +740,7 @@ font-size: 22px;
 .home_nav .m:hover {
   color:#000;
   /* background-color:rgba(255,255,255,0.25); */
-  background-color: #0017E5;
+  background-color: #000;
   border-radius: 10px;
   color: rgb(255, 255, 255);
   padding:2.5px 15px 5px 15px;

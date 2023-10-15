@@ -32,6 +32,7 @@ body{
 }
 
 .qfooter{
+    height: 35vh;
     display: grid;
     grid-template-rows:1fr 2fr 20% ;
     /* row-gap: 20px; */
@@ -63,11 +64,12 @@ body{
 }
 
 .qborder3{
+    /* height: 10vh; */
     /* margin: 3vh 3vw; */
     display: grid;
     grid-template-columns: repeat(3,1fr);
     text-align: center;
-    border-top: 1px solid white;
+    border-top: .5px solid white;
     align-items: center;
 
 }
@@ -91,6 +93,7 @@ body{
         height: 7vw;
     }   
     .qfooter{
+        height:20vh;
         font-size: 2.25vw;
     }
     .qlogof,.qlogot{
